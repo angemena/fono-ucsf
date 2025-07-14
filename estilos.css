@@ -1,49 +1,61 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  margin: 0;
+  background-color: #f7f9fa;
   padding: 20px;
 }
 
 h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  color: #145a92;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-.malla-grid {
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.columna {
   display: flex;
-  overflow-x:auto;
-  padding:10px;
-  justify-content: flex-start;
-  gap: 30px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.columna h2 {
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  padding: 8px;
+  border-radius: 5px;
 }
 
 .materia {
   padding: 12px;
-  border-radius: 8px;
-  background: #ffffff;
+  border-radius: 6px;
+  background-color: #ffffff;
   border: 2px solid #ddd;
   cursor: pointer;
   transition: 0.3s;
   text-align: center;
-}
-
-.materia:hover {
-  background: #e3f2fd;
+  color: #fff;
 }
 
 .completada {
-  background: #d4edda;
-  border-color: #28a745;
+  background-color: #c8e6c9 !important;
+  border-color: #2e7d32 !important;
+  color: #000 !important;
 }
 
 .bloqueada {
-  background: #f8d7da;
-  border-color: #dc3545;
+  background-color: #f8d7da !important;
+  border-color: #dc3545 !important;
   cursor: not-allowed;
-  color: #999;
+  color: #666 !important;
 }
 
+/* Tonalidades base #2196f3 */
+.color-1 { background-color: #2196f3; }
+.color-2 { background-color: #1e88e5; }
+.color-3 { background-color: #1976d2; }
+.color-4 { background-color: #1565c0; }
+.color-5 { background-color: #0d47a1; }
